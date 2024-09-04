@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollnex Consulting Firm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px; /* Adjust the height as needed */
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .content-section {
+            margin: 20px 0;
+        }
+        .content-section h2 {
+            color: #c00; /* Red color from logo */
+        }
+        .content-section img {
+            width: 50%;
+            height: auto;
+            margin: 10px 20px 10px 0;
+            float: left; /* Float the images to the left for text wrapping */
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq h3 {
+            color: #c00;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .faq p {
+            display: none;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="POLLNEX_logo.png" alt="Pollnex Logo"> <!-- Placeholder for the logo -->
+        <div>
+            <h1>Pollnex Consulting Firm</h1>
+            <p>Empowering Decisions Through Data</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <img src="image1.png" alt="About Us Image"> <!-- Placeholder for the about section image -->
+            <p>Pollnex is a Canadian statistical consulting firm dedicated to providing robust and tailored statistical solutions. Our consultants work closely with clients to analyze data and develop customized strategies to help achieve their research goals.</p>
+        </section>
+
+        <section id="services" class="content-section">
+            <h2>Our Services</h2>
+            <img src="image2.png" alt="Services Image"> <!-- Placeholder for the services section image -->
+            <ul>
+                <li>Survey Design</li>
+                <li>Data Processing</li>
+                <li>Data Visualization</li>
+                <li>Statistical Modeling</li>
+            </ul>
+        </section>
+
+        <section id="team" class="content-section">
+            <h2>Our Expert Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="image3.png" alt="Team Member Image 1"> <!-- Placeholder for the team member image -->
+                    <h3>Econometrics & Statistics Consultants</h3>
+                    <p>Our team comprises leading experts in econometrics and statistics, capable of tackling projects in any domain, even those new to us.</p>
+                </div>
+                <div class="team-member">
+                    <img src="image4.png" alt="Team Member Image 2"> <!-- Placeholder for the team member image -->
+                    <h3>Customized Solutions</h3>
+                    <p>By outsourcing our services, clients can save time on data analysis and focus on research and developing new questions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section faq">
+            <h2>Frequently Asked Questions</h2>
+            <img src="image5.png" alt="FAQ Image"> <!-- Placeholder for the FAQ section image -->
+            <div>
+                <h3>What consulting services do you offer?</h3>
+                <p>Pollnex offers a wide range of statistical consulting and survey methods management services to ministries, organizations, public institutions, and international agencies.</p>
+            </div>
+            <div>
+                <h3>What types of surveys and sampling services do you offer?</h3>
+                <p>We provide comprehensive survey design, sampling services, and quality assessment for various types of data collection efforts.</p>
+            </div>
+            <div>
+                <h3>How do you evaluate the quality of your services?</h3>
+                <p>Our services are continuously evaluated against industry standards and client feedback to ensure we deliver the highest quality solutions.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pollnex Consulting Firm. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const nextElement = item.nextElementSibling;
+                nextElement.style.display = nextElement.style.display === 'none' || nextElement.style.display === '' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+    <br><br><br><br> <!-- 4 empty line spaces -->
+</body>
+</html>
